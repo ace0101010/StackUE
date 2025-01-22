@@ -8,6 +8,7 @@ public class Main {
             intStack.push(10);
             intStack.push(20);
             intStack.push(30);
+            
             System.out.println("List: " + intStack.list()); // Expect: 10;20;30
             System.out.println("Peek: " + intStack.peek()); // Expect: 30
             System.out.println("Pop: " + intStack.pop()); // Expect: 30
