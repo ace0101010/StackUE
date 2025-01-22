@@ -23,7 +23,6 @@ public class Main {
             System.out.println("Pop: " + stringStack.pop()); // Expect: World
             System.out.println("List after pop: " + stringStack.list()); // Expect: Hello
 
-            // Edge case: Pop from an empty stack
             stringStack.pop(); // Pops "Hello"
             stringStack.pop(); // Should throw exception
 

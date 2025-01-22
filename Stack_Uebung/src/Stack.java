@@ -12,7 +12,6 @@ public class Stack<T> {
     }
 
     // Method to add an element to the top of the stack
-    // Throws StackFullException if the stack is full
     public void push(T element) throws StackFullException {
         if (top == capacity - 1) { // Check if the stack is full
             throw new StackFullException("Stack is full. Cannot push element.");
@@ -21,7 +20,6 @@ public class Stack<T> {
     }
 
     // Method to remove and return the top element of the stack
-    // Throws StackEmptyException if the stack is empty
     public T pop() throws StackEmptyException {
         if (top == -1) { // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot pop element.");
@@ -30,7 +28,6 @@ public class Stack<T> {
     }
 
     // Method to return the top element of the stack without removing it
-    // Throws StackEmptyException if the stack is empty
     public T peek() throws StackEmptyException {
         if (top == -1) { // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot peek element.");
