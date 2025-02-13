@@ -23,7 +23,7 @@ public class Stack<T> {
         if (top == -1) { // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot pop element.");
         }
-        return (T) elements[top--]; // Return top element and decrement top
+        return elements[top--]; // Return top element and decrement top
     }
 
     // Return the top element of the stack without removing it
@@ -31,7 +31,7 @@ public class Stack<T> {
         if (top == -1) { // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot peek element.");
         }
-        return (T) elements[top]; // Return the top element
+        return elements[top]; // Return the top element
     }
 
 
