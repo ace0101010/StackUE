@@ -24,8 +24,8 @@ public class Main {
             System.out.println("Pop: " + stringStack.pop()); // Expect: World
             System.out.println("List after pop: " + stringStack.list()); // Expect: Hello
 
-            stringStack.pop(); // Pops "Hello"
-            stringStack.pop(); // Should throw exception
+            stringStack.pop(); // Pops the "Hello" String in the list Array of the Stack
+            stringStack.pop(); // Throws an exception right here
 
         } catch (Stack.StackFullException | Stack.StackEmptyException e) {
             System.out.println(e.getMessage());
