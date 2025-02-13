@@ -3,7 +3,7 @@ public class Stack<T> {
     private int top = 0;
     private int capacity = 10;
 
-    // Constructor
+    // Constructor with a capacity
     public Stack(int capacity) {
         this.capacity = capacity;
         this.elements = ((T[]) new Object[capacity]);
@@ -20,18 +20,18 @@ public class Stack<T> {
 
     // Remove and return the top element of the stack
     public T pop() throws StackEmptyException {
-        if (top == -1) { // Check if the stack is empty
+        if (top == -1) {                        // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot pop element.");
         }
-        return elements[top--]; // Return top element and decrement top
+        return elements[top--];                 // Return top element and decrement top
     }
 
     // Return the top element of the stack without removing it
     public T peek() throws StackEmptyException {
-        if (top == -1) { // Check if the stack is empty
+        if (top == -1) {                                                            // Check if the stack is empty
             throw new StackEmptyException("Stack is empty. Cannot peek element.");
         }
-        return elements[top]; // Return the top element
+        return elements[top];                                                       // Return the top element
     }
 
 
